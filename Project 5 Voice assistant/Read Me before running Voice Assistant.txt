@@ -1,0 +1,19 @@
+Make sure you have completed all of the steps below or else the ATM voice won't run.
+
+Step 1: Go to the windows settings, Time and language, then select language tab from the top left of your screen.
+Step 2: Below the "Prefered Languages" section, there is an option "Add Language". Click on that and search "Hindi". Then click on the 'next' and check all the optional language features except 'Set as my windows default language' 
+        then click on the install.
+Step 3: Go to the dependencies folder that I've included in my project and run the file 'hemantM' and 'raviM'. It will ask you "Do you want to allow this app to make changes to your device" then click on YES. Then it will ask you 
+	'Are you sure you want to continue' click on YES. At last click on OK. Do this step 3 for both the files 'hemantM' and 'raviM'.
+Step 4: From your python terminal, install a module 'pyttsx3'. If you don't know how to install then just write this in your python terminal 'pip install pyttsx3'. It will install this module.
+Step 5: Go to the dependencies\Findind Id folder and then open 'Test_id_for_Hemant' python file. After opening, run the codes. If it gives you the output like 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Speech\Voices\Tokens\MSTTS_V110_hiIN_HemantM' 
+	Then it is the correct id for hemant. Each person have different id for their voices so in my case the id of hemant is 1. If id of hemant is not 1 in your pc then change the id and try 0 to 5 each number till you find the 
+	correct id. Do this for both the files 'Test_id_for_hemant' and 'Test_id_for_ravi'. When you find their correct id please remember it.  
+Step 6: Go to the dependencies\voice test folder and run the 'Voice_test_for_Hemant.py' python file. After opening, In the line no.7 'voice = engine.setProperty('voice',voices[1].id)', change the 1 to the id you remember 
+	for your voice person. In my case it is 1 for hemant. After changing the id run the codes and if you hear the person's voice perfectly then you are all set. Do this step 6 for both the files 'Voice_test_for_Hemant.py' and
+	'Voice_test_for_Ravi.py'.
+Step 7: Final Step. Ravi speaks english language and hemant speaks hindi language only. So, Open the my project 'ATM_voice(eng)' and then on the line no.5 'voice = engine.setProperty('voice',voices[2].id)', change the id according to
+	the correct id of ravi. Then open ATM_voice(Hindi)' and on the line no.9 'voice = engine.setProperty('voice',voices[1].id)', change the id according to the correct id of Hemant. Thats it. Run the project and enjoy!!! 
+
+For any problems mail me. 
+mail: kohadritik@gmail.com
